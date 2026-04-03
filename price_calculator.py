@@ -1,4 +1,4 @@
----- Funciones provistas (NO modificar) ----
+ ---- Funciones provistas (NO modificar) ----
 
 def apply_discount(price, discount_pct):
     """Dado un precio y un porcentaje de descuento, retorna el precio con el descuento aplicado."""
