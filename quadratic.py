@@ -1,8 +1,8 @@
 # Replace the "ANSWER HERE" for your answer
 
 def roots(a, b, c):
-    r1= (-b + (b*b - 4*a*c)**(1/2))/2*a
-    r2= (-b - (b*b - 4*a*c)**(1/2))/2*a
+    r1= (-b + (b*b - 4*a*c)**(1/2))/(2*a)
+    r2= (-b - (b*b - 4*a*c)**(1/2))/(2*a)
     if (b*b - 4*a*c)> 0:
         return f"({r1}, {r2})"
     elif (b*b - 4*a*c)==0:
@@ -16,7 +16,7 @@ def value_y(a, b, c, x):
 
 def to_string(a, b, c):
     if a==0 and b==0 and c==0:
-        return f"f(x) = "
+        return f"f(x) = 0"
     elif a==0 and b==0:
         return f"f(x) = {c}"
     elif a==0 and c==0:
@@ -31,3 +31,14 @@ def to_string(a, b, c):
         return f"f(x) = {a} * X^2 + {b} * X"
     else:
        return f"f(x) = {a} * X^2 + {b} * X + {c}"
+
+def derivation(a, b, c):
+
+    if a==0 and b==0:
+        return f"f'(x) = 0"
+    elif a==0:
+        return f"f'(x) = {b}"
+    elif b==0:
+        return f"f'(x) = {2*a} * X"
+    else:
+        return f"f'(x) = {2*a} * X + {b}"
